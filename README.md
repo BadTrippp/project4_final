@@ -216,4 +216,4 @@ kubectl port-forward pod/app 8000:80 >> kubernetes_out.txt &
 ./make_prediction.sh
 ```
 
-##Directory Structure
+## Directory Structure
