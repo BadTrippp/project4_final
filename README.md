@@ -43,11 +43,9 @@ source .devops/bin/activate
 
 sudo yum update -y
 #INSTALL GIT
-
 sudo yum install git -y
 #Check git 
 git version
-
 #INSTALL DOCKER
 sudo yum install docker
 #Enable docker service at boot time
