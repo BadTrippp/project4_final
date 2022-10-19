@@ -156,12 +156,30 @@ echo "========= DONE ========="
 # docker logs project4 -f >> docker_out.txt 
 ```
 
-* Build, run docker and make a prediction
+* Build image , run docker and make a prediction
 ```bash
-#Build and run docker
+#Build image and run docker 
 ./run_docker.sh
-#Make a prediction
+#Make prediction
 ./make_prediction.sh
+```
+
+* Complete upload_docker.sh to upload docker image to dockerhub
+```bash
+# Step 1:
+# Create dockerpath
+# dockerpath=<your docker ID/path>
+dockerpath=badtrip/udacity-project4
+
+# Step 2:  
+# Authenticate & tag
+echo "Docker ID and Image: $dockerpath"
+docker login registry-1.docker.io
+docker tag project4 $dockerpath
+
+# Step 3:
+# Push image to a docker repository
+docker push badtrip/udacity-project4
 ```
 
 ### Kubernetes Steps
