@@ -37,6 +37,11 @@ python3 -m pip install --user virtualenv
 python3 -m virtualenv --python=<path-to-Python3.7> .devops
 source .devops/bin/activate
 ```
+
+```bash
+* Install git
+```
+
 * Run `make install` to install the necessary dependencies
 
 ### Running `app.py`
