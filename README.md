@@ -1,4 +1,3 @@
-<include a CircleCI status badge, here>
 
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/BadTrippp/project4_final/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/BadTrippp/project4_final/tree/main)
 
@@ -222,13 +221,10 @@ minikube start
 
 ## Directory Explain
 * `.circleci/config.yml`: Config file for CircleCI pipeline
-* `model_data`: training model data
-* `output_txt_files`: log output of docker and kubernetes steps
-* `app.py`: main application file
 * `Dockerfile`: file to build docker image
 * `make_prediction.sh`: bash script to call application's api to make a prediction
-* `Makefile`: defines set of task to be executed
 * `requirements.txt`: dependencies require to run python application
 * `run_docker.sh`: build and run docker image
 * `run_kubernetes.sh`: deploy application using kubernetes
 * `upload_docker.sh`: upload docker image to dockerhub
+* `output_txt_files`: folder log output of docker and kubernetes steps

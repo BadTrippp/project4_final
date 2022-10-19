@@ -17,4 +17,8 @@
 0     0  6.575  296.0     15.3  396.9   4.98
 [2022-10-18 09:31:26,261] INFO in app: Prediction value: 
 [20.35373177134412]
-172.17.0.1 - - [18/Oct/2022 09:31:26] "POST /predict HTTP/1.1" 200 -
+172.17.0.1 - - [18/Oct/2022 09:31:26] "POST /predict HTTP/1.1" 200 - * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on

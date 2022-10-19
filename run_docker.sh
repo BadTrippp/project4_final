@@ -31,4 +31,4 @@ echo "."
 echo "========= START ========="
 docker run --name project4 -dp 8000:80 project4 
 echo "========= DONE ========="
-# docker logs project4 -f >> docker_out.txt 
+ docker logs project4 -f >> ./output_txt_files/docker_out.txt 
