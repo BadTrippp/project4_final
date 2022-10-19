@@ -181,10 +181,37 @@ docker tag project4 $dockerpath
 # Push image to a docker repository
 docker push badtrip/udacity-project4
 ```
+* Run upload_docker.sh to upload docker image to dockerhub
+```bash
+./upload_docker.sh
+```
 
 ### Kubernetes Steps
+* Complete run_kubernetes.sh file
+```bash
+kubectl delete pod app
+# Step 1:
+# This is your Docker ID/path
+# dockerpath=<>
+dockerpath=badtrip/udacity-project4
 
-* Setup and Configure Docker locally
-* Setup and Configure Kubernetes locally
-* Create Flask app in Container
-* Run via kubectl
+# Step 2
+# Run the Docker Hub container with kubernetes
+kubectl run app --image=$dockerpath --port=8000
+
+# Step 3:
+# List kubernetes pods
+kubectl get pods 
+sleep 10
+# Step 4:
+# Forward the container port to a host
+kubectl port-forward pod/app 8000:80 >> kubernetes_out.txt &
+```
+
+* Deploy application on kubernetes and make a prediction
+```bash
+#Deploy application on kubernetes
+./run_kubernetes.sh
+#Make a prediction
+./make_prediction.sh
+```
