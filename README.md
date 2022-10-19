@@ -156,7 +156,13 @@ echo "========= DONE ========="
 # docker logs project4 -f >> docker_out.txt 
 ```
 
-
+* Build, run docker and make a prediction
+```bash
+#Build and run docker
+./run_docker.sh
+#Make a prediction
+./make_prediction.sh
+```
 
 ### Kubernetes Steps
 
