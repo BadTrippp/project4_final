@@ -42,23 +42,39 @@ source .devops/bin/activate
 ```bash
 
 sudo yum update -y
+
 #INSTALL GIT
+
 sudo yum install git -y
+
 #Check git 
+
 git version
+
 #INSTALL DOCKER
+
 sudo yum install docker
+
 #Enable docker service at boot time
+
 sudo systemctl enable docker.service
+
 #Start Docker service
+
 sudo systemctl start docker.service
+
 #INSTALL MINIKUBE
+
 curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 
 sudo chmod +x minikube 
 sudo mv minikube /usr/local/bin/
+
 #Check minikube version
+
 minikube version
+
 #Install Hadolint
+
 sudo wget -O ./hadolint https://github.com/hadolint/hadolint/releases/download/v2.10.0/hadolint-Linux-x86_64
 sudo chmod +x ./hadolint
 sudo mv ./hadolint /usr/local/bin/hadolint
