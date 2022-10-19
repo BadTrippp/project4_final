@@ -220,11 +220,11 @@ minikube start
 ```
 
 ## Directory Explain
-* `.circleci/config.yml`: Config file for CircleCI pipeline
-* `Dockerfile`: file to build docker image
-* `make_prediction.sh`: bash script to call application's api to make a prediction
-* `requirements.txt`: dependencies require to run python application
-* `run_docker.sh`: build and run docker image
-* `run_kubernetes.sh`: deploy application using kubernetes
-* `upload_docker.sh`: upload docker image to dockerhub
-* `output_txt_files`: folder log output of docker and kubernetes steps
+* `.circleci/config.yml`: config file for CircleCI pipepline
+* `Dockerfile`: config file to build docker image
+* `make_prediction.sh`: script to make prediction from app's api
+* `requirements.txt`:  dependencies require list to install 
+* `run_docker.sh`: script to build docker image and run container
+* `run_kubernetes.sh`: script to deploy application with kubenetes
+* `upload_docker.sh`: script to upload docker image to docker hub
+* `output_txt_files`: output file of docker and kubernetes script
