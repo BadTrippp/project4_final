@@ -38,8 +38,22 @@ python3 -m virtualenv --python=<path-to-Python3.7> .devops
 source .devops/bin/activate
 ```
 
+* INSTALL NECESSARY TOOLS  
 ```bash
-* Install git
+
+sudo yum update -y
+#INSTALL GIT
+
+sudo yum install git -y
+#Check git 
+git version
+
+#INSTALL DOCKER
+sudo yum install docker
+#Enable docker service at boot time
+sudo systemctl enable docker.service
+#Start Docker service
+sudo systemctl start docker.service
 ```
 
 * Run `make install` to install the necessary dependencies
