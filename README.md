@@ -1,5 +1,7 @@
 <include a CircleCI status badge, here>
 
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/BadTrippp/project4_final/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/BadTrippp/project4_final/tree/main)
+
 ## Project Overview
 
 In this project, you will apply the skills you have acquired in this course to operationalize a Machine Learning Microservice API. 
@@ -210,10 +212,23 @@ kubectl port-forward pod/app 8000:80 >> kubernetes_out.txt &
 
 * Deploy application on kubernetes and make a prediction
 ```bash
+#Start minikube
+minikube start
 #Deploy application on kubernetes
 ./run_kubernetes.sh
 #Make a prediction
 ./make_prediction.sh
 ```
 
-## Directory Structure
+## Directory Explain
+* `.circleci/config.yml`: Config file for CircleCI pipeline
+* `model_data`: training model data
+* `output_txt_files`: log output of docker and kubernetes steps
+* `app.py`: main application file
+* `Dockerfile`: file to build docker image
+* `make_prediction.sh`: bash script to call application's api to make a prediction
+* `Makefile`: defines set of task to be executed
+* `requirements.txt`: dependencies require to run python application
+* `run_docker.sh`: build and run docker image
+* `run_kubernetes.sh`: deploy application using kubernetes
+* `upload_docker.sh`: upload docker image to dockerhub
