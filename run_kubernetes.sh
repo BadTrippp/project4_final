@@ -19,4 +19,4 @@ sleep 10
 # Forward the container port to a host
 kubectl port-forward pod/app 8000:80 >> ./output_txt_files/kubernetes_out.txt &
 #log app
-kubectl logs -f app
+kubectl logs -f app >> ./output_txt_files/kubernetes_out.txt &
